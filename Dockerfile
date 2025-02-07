@@ -5,7 +5,7 @@ FROM node:18-alpine
 WORKDIR /whaticket_backend
 
 # Copiar package.json e package-lock.json
-COPY package*.json ./
+COPY backend/package*.json ./
 
 # Instalar as dependências
 RUN npm install --force
