@@ -8,7 +8,7 @@ WORKDIR /whaticket_backend
 COPY backend/package*.json ./
 
 # Instalar as dependências
-RUN npm install --force
+RUN npm install
 
 # Copiar o restante do código
 COPY . .
